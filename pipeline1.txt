@@ -20,7 +20,7 @@ pipeline {
         
          stage('Stage3') {
             steps {
-                ecmo 'Files are available in workspace'
+                echo 'Files are available in workspace'
             }
         }
         
