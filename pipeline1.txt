@@ -5,7 +5,7 @@ pipeline {
         stage('Stage1') {
             steps {
                 echo 'Synchronise Repository'
-                git branch: 'main',url: 'https://github.com/devclass1/sample2.git'
+                git branch: 'main',url: 'https://github.com/bosesirsendu352/firstRepo.git'
             }
         }
         
