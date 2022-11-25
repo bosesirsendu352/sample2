@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Stage1') {
             steps {
-                echo 'Hello World'
+                echo 'Synchronise Repository'
+                git branch: 'main',url: ''
             }
         }
         
