@@ -5,19 +5,22 @@ pipeline {
         stage('Stage1') {
             steps {
                 echo 'Synchronise Repository'
-                git branch: 'main',url: ''
+                git branch: 'main',url: 'https://github.com/devclass1/sample2.git'
             }
         }
         
          stage('Stage2') {
             steps {
-                echo 'Hello World'
+                sh '''
+                echo 'Check files in workspace directory in jenkins'
+                ls -l /var/lib/jenkins/workspace/project1/
+                '''
             }
         }
         
          stage('Stage3') {
             steps {
-                echo 'Hello World'
+                echo 'Files are available in workspace'
             }
         }
         
